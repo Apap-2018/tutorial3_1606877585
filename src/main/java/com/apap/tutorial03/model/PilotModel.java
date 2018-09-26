@@ -1,10 +1,22 @@
 package com.apap.tutorial03.model;
 
+/**
+ * PilotModel is a class that represent a pilot
+ */
+
 public class PilotModel {
     private String id;
     private String licenseNumber;
     private String name;
     private Integer flyHour;
+
+    /**
+     * Main constructor for PilotModel
+     * @param id id of pilot
+     * @param licenseNumber license number that the pilot have
+     * @param name pilot's name
+     * @param flyhour fly experience measure in hours
+     */
 
     public PilotModel(String id, String licenseNumber, String name, Integer flyhour) {
         this.id = id;
@@ -13,6 +25,10 @@ public class PilotModel {
         this.flyHour = flyhour;
     }
 
+    /**
+     * Series of Setter and getter
+     *
+     */
     public String getId() {
         return id;
     }
